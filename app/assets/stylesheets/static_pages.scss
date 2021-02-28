@@ -1,0 +1,27 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+}
+body > div { flex: 1; }
+
+.col-6 {
+  height: 500px;
+  width: 1500px;
+  background-color: #ddd;
+  overflow-y: scroll;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
