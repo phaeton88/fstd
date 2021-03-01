@@ -42,9 +42,9 @@ var getToDos = function () {
       var tsk = response.tasks;
       tsk.forEach(function (task) {
         if (task.completed === true) {
-          $('tbody').append('<tr>' + '<td class = "toDo">' + task.content + '</td>' + '<td><button class="btn btn-sm markComplete" data-id="' + task.id + '">Complete</button></td>' + '<td><button class="btn btn-sm markActive" data-id="' + task.id + '">Mark Active</button></td>' + '<td class = "isComplete green">' + 'Completed' + '</td>' + '<td><button class="btn btn-sm remove" data-id="' + task.id + '">remove</button></td>' + '</tr>');
+          $('tbody').append('<tr>' + '<td class = "toDo">' + task.content + '</td>' + '<td><button class="btn btn-sm markActive" data-id="' + task.id + '">Mark Active</button></td>' + '<td class = "isComplete green">' + 'Completed' + '</td>' + '<td><button class="btn btn-sm remove" data-id="' + task.id + '">remove</button></td>' + '</tr>');
         } else if (task.completed === false) {
-          $('tbody').append('<tr>' + '<td class = "toDo">' + task.content + '</td>' + '<td><button class="btn btn-sm markComplete" data-id="' + task.id + '">Complete</button></td>' + '<td><button class="btn btn-sm markActive" data-id="' + task.id + '">Mark Active</button></td>' + '<td class = "isComplete red">' + 'Active' + '</td>' + '<td><button class="btn btn-sm remove" data-id="' + task.id + '">remove</button></td>' + '</tr>');
+          $('tbody').append('<tr>' + '<td class = "toDo">' + task.content + '</td>' + '<td><button class="btn btn-sm markComplete" data-id="' + task.id + '">Complete</button></td>' + '<td class = "isComplete red">' + 'Active' + '</td>' + '<td><button class="btn btn-sm remove" data-id="' + task.id + '">remove</button></td>' + '</tr>');
         }
       });
     },
